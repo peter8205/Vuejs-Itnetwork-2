@@ -2,7 +2,7 @@
   <div class="container">
     <div class="calculator">
       <div class="calculator-row">
-        <div class="display">value</div>
+        <div class="display">{{ value }}</div>
       </div>
       <div class="calculator-row"/>
       <div class="calculator-row"/>
@@ -14,7 +14,12 @@
 
 <script>
 export default {
-  name: 'TheLayout'
+  name: 'TheLayout',
+  data () {
+    return {
+      value: '0'
+    }
+  }
 }
 </script>
 

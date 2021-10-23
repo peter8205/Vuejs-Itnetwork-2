@@ -1,9 +1,15 @@
 <template>
-  <div class="calculator-button">C</div>
+  <<div class="calculator-button">{{ displayValue }}</div>
 </template>
 <script>
 export default {
-  name: 'CalculatorButton'
+  name: 'CalculatorButton',
+  props: {
+    displayValue: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 
