@@ -4,7 +4,7 @@ import CalculatorButton from '@/components/CalculatorButton.vue'
 
 createApp(App)
   .component('CalculatorButton', CalculatorButton)
-  .mount('#app')
+  .mount('#app');
 
 
 <template>
